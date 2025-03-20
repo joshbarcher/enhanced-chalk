@@ -23,16 +23,16 @@ npm install @yourusername/enhanced-chalk
 
 ### **1️⃣ Importing the Library**
 ```js
-import enhancedChalk from '@yourusername/enhanced-chalk';
+import chalk from '@yourusername/enhanced-chalk';
 ```
 
 ### **2️⃣ Using Predefined Colors**
 Your package includes a set of predefined **named colors** from `colors.js`. Example usage:
 
 ```js
-console.log(enhancedChalk.orange("This is orange!"));
-console.log(enhancedChalk.teal("This is teal!"));
-console.log(enhancedChalk.gold("This is gold!"));
+console.log(chalk.orange("This is orange!"));
+console.log(chalk.teal("This is teal!"));
+console.log(chalk.gold("This is gold!"));
 ```
 
 ---
@@ -62,7 +62,7 @@ console.log(enhancedChalk.gold("This is gold!"));
 Use the `tint()` function to apply a custom RGB color:
 
 ```js
-console.log(enhancedChalk.tint(255, 165, 0, "This is orange!"));
+console.log(chalk.tint(255, 165, 0, "This is orange!"));
 ```
 
 ---
@@ -71,8 +71,8 @@ console.log(enhancedChalk.tint(255, 165, 0, "This is orange!"));
 Define your own colors dynamically using `registerColor(name, r, g, b)`. Example:
 
 ```js
-enhancedChalk.registerColor("neonPurple", 153, 50, 204);
-console.log(enhancedChalk.neonPurple("This is neon purple!"));
+chalk.registerColor("neonPurple", 153, 50, 204);
+console.log(chalk.neonPurple("This is neon purple!"));
 ```
 
 ---
@@ -81,7 +81,7 @@ console.log(enhancedChalk.neonPurple("This is neon purple!"));
 Once registered, you can retrieve colors dynamically:
 
 ```js
-console.log(enhancedChalk.getColor("neonPurple", "This is also neon purple!"));
+console.log(chalk.getColor("neonPurple", "This is also neon purple!"));
 ```
 
 If the color doesn’t exist, it will return a gray **"Color not found"** message.
@@ -92,7 +92,7 @@ If the color doesn’t exist, it will return a gray **"Color not found"** messag
 To print all registered colors:
 
 ```js
-console.log(enhancedChalk.toString());
+console.log(chalk.toString());
 ```
 
 This will return a list of all **predefined and custom colors**.
