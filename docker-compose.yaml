@@ -1,0 +1,16 @@
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:latest
+    container_name: verdaccio
+    restart: unless-stopped
+    ports:
+      - "4873:4873"
+    volumes:
+      - "C:/verdaccio/storage:/verdaccio/storage"
+      - "C:/verdaccio/config:/verdaccio/conf"
+      - "C:/verdaccio/plugins:/verdaccio/plugins"
+    environment:
+      - VERDACCIO_PORT=4873
+      - VERDACCIO_PROTOCOL=http
+      - VERDACCIO_STORAGE=/verdaccio/storage
+      - VERDACCIO_CONFIG_PATH=/verdaccio/conf/config.yaml

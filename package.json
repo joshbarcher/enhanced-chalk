@@ -1,8 +1,8 @@
 {
-  "name": "enhanced-chalk",
+  "name": "@jarcher/enhanced-chalk",
   "version": "1.0.0",
   "description": "A better chalk wrapper with enhanced features",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
   "private": false,
@@ -24,5 +24,8 @@
   },
   "dependencies": {
     "chalk": "^5.4.1"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
