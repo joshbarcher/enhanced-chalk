@@ -10,10 +10,10 @@
     "node": ">= 14.0.0",
     "npm": ">= 6.0.0"
   },
-  "homepage": "",
+  "homepage": "https://github.com/joshbarcher/enhanced-chalk",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/joshbarcher/enhanced-chalk"
   },
   "bugs": "",
   "keywords": [],
@@ -21,11 +21,6 @@
     "name": "Josh Archer",
     "email": "jarcher@greenriver.edu",
     "url": "https://projectmindforge.com"
-  },
-  "contributors": [],
-  "scripts": {
-    "dev": "",
-    "test": ""
   },
   "dependencies": {
     "chalk": "^5.4.1"
