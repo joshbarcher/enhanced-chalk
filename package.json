@@ -1,6 +1,6 @@
 {
   "name": "@jarcher/enhanced-chalk",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "A better chalk wrapper with enhanced features",
   "main": "src/index.js",
   "type": "module",
@@ -26,6 +26,12 @@
     "chalk": "^5.4.1"
   },
   "publishConfig": {
-    "registry": "http://localhost:4873"
+    "access": "public",
+    "registry": "https://npm.projectmindforge.com"
+  },
+  "scripts": {
+    "patch": "npm version patch --no-git-tag-version && npm publish",
+    "minor": "npm version minor --no-git-tag-version && npm publish",
+    "major": "npm version major --no-git-tag-version && npm publish"
   }
 }
