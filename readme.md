@@ -9,15 +9,8 @@
 To install **Enhanced Chalk**, ensure you are using **your private Verdaccio registry**:
 
 ```sh
-npm install @yourusername/enhanced-chalk --registry http://localhost:4873
-```
-
-Or, if publishing to npm:
-```sh
 npm install @yourusername/enhanced-chalk
 ```
-
----
 
 ## 🚀 Usage
 
